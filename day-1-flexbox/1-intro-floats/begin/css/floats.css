@@ -25,6 +25,41 @@ a {
 	background-color: #fff;
 }
 
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+[class*="col-"] {
+	float: left;
+	margin-left: 4%;
+	margin-right: 4%;
+	min-height: 1px;
+	width: 92%;
+}
+
+.col-1-2 {
+	background-color: blue;
+	width: 15%;
+}
+
+.col-2 {
+	width: 40%
+}
+
+.col-1-4 {
+	width: 18%;
+}
+
+.col-3 {
+	width: 60%;
+}
+
+.col-1 {
+	width: 92%
+}
+
 div img {
 	width: 100%;
 	max-width: 225px; 
